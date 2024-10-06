@@ -1,7 +1,4 @@
 
-
-
-
 const API_KEY = 'ywmjIhPygnpx0LacggNE7nqtALqLWUzEdDvsxcjI';
 
 //async and await
@@ -48,3 +45,16 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
     .then(data => console.log(data))
     .catch(error => console.error(error));
 
+
+
+//Search Function API
+//Search Guide
+function popUp() {
+    nasaArchiveSearch = window.open(
+        "https://exoplanetarchive.ipac.caltech.edu/applications/Inventory/search.html",
+        "Nasa Guide",
+        "width=900, height=600, resizable=yes, scrollbars=yes, location=yes"
+    )
+}
+
+document.getElementById("guide").addEventListener("click", popUp);

@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Givin' you existential crisis</title>
     <link rel="stylesheet" href="./styles.css">
     <script defer src="./script.mjs"></script>
 </head>
 <body>
+    <!-- Search Function for Exoplanets-->
+    <form class="exoplanets">
+        <input type="text" class="planetsInput" placeholder="Enter Planet's Name">
+        <button type="submit">Get Planet</button>
+    </form>
+
+    <div class="cardFormat">
+        <h1 class="planetDisplay"></h1>
+        <button id="guide" type="button">Search Guide</button>
+    </div>
+
+    <!--Nasa Image of the Day -->
     <button id="creditor" type="button" onclick="fetchData">Credits</button> 
     <img id="mainPg" src="" alt="Pic of the day" style="display: none;">
 
