@@ -9,8 +9,6 @@ fetchData()
 async function fetchData() {
 
     try {
-        
-
 
         const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`, { headers: { "x-api-key": API_KEY } })
         if (!response.ok) {
@@ -19,11 +17,19 @@ async function fetchData() {
         const data =  await response.json();
         console.log(data)
 
+        //Image of the day loading
         const imgOfTheDay = data.url;
         const imgElement = document.getElementById("mainPg");
 
         imgElement.src = imgOfTheDay;
         imgElement.style.display="block";
+
+
+        //Creditor Button
+        const creditor = data.copyright.date;
+        const credits = document.getElementById("creditor").creditor;
+
+
 
     }
     catch (error) {
