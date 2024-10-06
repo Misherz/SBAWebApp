@@ -16,6 +16,9 @@
 ### Acknowledgement :
     BroCode YT guide
     Nasa API
+    Background: https://pixabay.com/gifs/star-night-night-sky-dark-4773/
+    Moon: https://pixabay.com/gifs/moon-lunar-craters-astronomy-spin-12183/
+    Sun: https://pixabay.com/gifs/solar-system-sun-outer-space-galaxy-5702/
 
 
 ### Github:

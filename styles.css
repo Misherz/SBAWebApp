@@ -1,0 +1,39 @@
+body {
+    background-image: url(./images/star-4773.gif);
+}
+
+#guide{
+    background-color: transparent;
+    border: none;
+}
+
+#moon {
+    display: flex;
+    justify-content: end;
+    
+}
+
+#middleContent {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.btn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+
+.topSearch{
+    display: block;
+    text-align: right;
+    
+}

@@ -7,32 +7,36 @@
     <title>Givin' you existential crisis</title>
     <link rel="stylesheet" href="./styles.css">
     <script defer type="module" src="./script.mjs"></script>
-    <script defer type="module" src="./imports.js">
-    </script>
+    <script defer type="module" src="./imports.mjs"></script>
 </head>
 
 <body> <!-- Add starry background -->
 
     <!-- Search Function for Images-->
-    <input type="text" id="textInput" placeholder="Enter Photo #0-856">
-    <button type="button" id="getImageButton">Get Image</button><br>
-
+    <div class="topSearch">
+        <input type="text" id="textInput" placeholder="Enter Photo #0-856">
+        <button type="button" id="getImageButton">Get Image</button>
+    </div>
     <img src="" id="nasaImgs" alt="Search Result for Nasa photos" style="display: none;">
 
-
-
-    <!--Test-->
-    <div class="cardFormat">
-        <h1 class="planetDisplay"></h1>
-        <button id="guide" type="button">Search Guide</button>
+    <div id="moon">
+        <button id="guide" type="button"><img src="./images/moon.gif" alt="Gif of rotating moon"></button><br>
     </div>
-
-
 
     <!--Nasa Image of the Day -->
     <h2>Image of the Day</h2>
-    <button id="creditor" type="button" onclick="fetchData">Credits</button>
-    <img id="mainPg" src="" alt="Pic of the day" style="display: none;">
+    <div id="middleContent">
+        <button id="creditor" type="button" onclick="fetchData">Credits</button>
+        <img id="mainPg" src="" alt="Pic of the day" style="display: none;">
+    </div><br><br>
+
+    <!--navbar-->
+    <div id="navbar">
+        <button class="btn"><a href="#">About</a></button>
+        <button class="btn"><a href="#">Explore</a></button>
+        <button class="btn"><a href="#">Head to Nasa</a></button>
+        <button class="btn"><a href="#">Contact</a></button>
+    </div>
 
 </body>
 

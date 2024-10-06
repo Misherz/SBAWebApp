@@ -1,3 +1,4 @@
+import toSun from './imports.mjs';
 
 const API_KEY = 'ywmjIhPygnpx0LacggNE7nqtALqLWUzEdDvsxcjI';
 
@@ -50,8 +51,8 @@ async function fetchData() {
 //Search Function API
 //Search Guide
 function popUp() {
-    nasaArchiveSearch = window.open(
-        "https://exoplanetarchive.ipac.caltech.edu/applications/Inventory/search.html",
+    let nasaArchiveSearch = window.open(
+        "https://plus.nasa.gov/",
         "Nasa Guide",
         "width=900, height=600, resizable=yes, scrollbars=yes, location=yes"
     )
