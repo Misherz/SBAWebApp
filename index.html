@@ -8,29 +8,72 @@
     <link rel="stylesheet" href="./styles.css">
     <script defer type="module" src="./script.mjs"></script>
     <script defer type="module" src="./imports.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body> <!-- Add starry background -->
 
-    <!-- Search Function for Images-->
-    <div class="topSearch">
-        <input type="text" id="textInput" placeholder="Enter Photo #0-856">
-        <button type="button" id="getImageButton">Get Image</button>
-    </div>
-    <img src="" id="nasaImgs" alt="Search Result for Nasa photos" style="display: none;">
-
     <div id="moon">
-        <button id="guide" type="button"><img src="./images/moon.gif" alt="Gif of rotating moon"></button><br>
+        <button id="guide" type="button"><img src="./images/moon.gif" alt="Gif of rotating moon" style="cursor: pointer"></button><br>
     </div>
 
     <!--Nasa Image of the Day -->
-    <h2>Image of the Day</h2>
+    <h2>NASA's Image of the Day</h2>
     <div id="middleContent">
-        <button id="creditor" type="button" onclick="fetchData">Credits</button>
         <img id="mainPg" src="" alt="Pic of the day" style="display: none;">
     </div><br><br>
 
-    <!--navbar-->
+    <div class="description">
+        <h2>Lorem Ipsum</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore a magni, expedita hic neque deleniti est
+            assumenda. Quia totam iste molestiae earum corporis! Commodi praesentium cumque fugiat. Similique, unde. A?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aut sunt nostrum, aperiam dolor ex quia
+            facilis incidunt maiores nemo voluptatem accusamus in modi dolorum inventore accusantium. Aperiam, itaque
+            eum?
+            Pariatur earum perferendis eum voluptatem soluta! Eveniet omnis ipsa sit fuga est qui eos et sint unde nemo
+            minus officiis, perferendis eum harum suscipit velit deleniti, placeat, delectus quo odit!
+            Nihil hic optio exercitationem alias molestiae sed recusandae laborum quibusdam consequatur facilis
+            reiciendis, non eum ipsam numquam, quaerat eveniet? Natus mollitia delectus harum voluptas impedit earum
+            quas maiores possimus corporis?
+            Accusantium, illum qui. Facilis porro perspiciatis enim neque. Id aliquam eligendi quam minus, excepturi est
+            voluptates nesciunt eveniet, necessitatibus magni hic sit vitae quaerat sint. Reprehenderit, ea! Sequi, id
+            perspiciatis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore a magni, expedita hic neque deleniti est
+            assumenda. Quia totam iste molestiae earum corporis! Commodi praesentium cumque fugiat. Similique, unde. A?
+        </p>
+    </div>
+
+
+    <!-- Search Function for Images-->
+    <div class="topSearch">
+        <input type="text" id="textInput" placeholder="Pick a #, See MARS!">
+        <button type="button" id="getImageButton">Get Image</button>
+    </div>
+    <img src="" id="nasaImgs" alt="Search Result for Nasa photos" style="display: none;"><br>
+    <img src="">
+
+    <!--Weather API-->
+    <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Curious? Type a city.">
+        <button id="cityBtn" type="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none;">
+        <!-- <h1 class="city">City</h1>
+        <p class="temp">Temp</p>
+        <p class="humidity">Humidity</p>
+        <p class="descDisplay">How it feels?</p>
+        <p class="weather emoji">☀</p>
+        <p class="errorDisplay">Please Enter a city</p> -->
+    </div>
+
+
+
+    <!-- navbar -->
     <div id="navbar">
         <button class="btn"><a href="#">About</a></button>
         <button class="btn"><a href="#">Explore</a></button>

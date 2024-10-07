@@ -1,4 +1,4 @@
-import toSun from './imports.mjs';
+import * as myFunctions from './imports.mjs';
 
 const API_KEY = 'ywmjIhPygnpx0LacggNE7nqtALqLWUzEdDvsxcjI';
 
@@ -21,13 +21,6 @@ async function fetchData() {
 
         imgElement.src = imgOfTheDay;
         imgElement.style.display="block";
-
-
-        //Creditor Button
-        const creditor = data.copyright.date;
-        const credits = document.getElementById("creditor").creditor;
-
-
 
     }
     catch (error) {
@@ -110,3 +103,10 @@ fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&
     })
     .then(data => console.log(data))
     .catch(error => console.error(error));
+
+
+
+
+
+
+

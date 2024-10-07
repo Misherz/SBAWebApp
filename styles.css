@@ -1,5 +1,8 @@
 body {
-    background-image: url(./images/star-4773.gif);
+    /* background-image: url(./images/star-4773.gif); */
+    background-color: black;
+    font-family: "PT Sans", sans-serif;
+
 }
 
 #guide{
@@ -10,7 +13,13 @@ body {
 #moon {
     display: flex;
     justify-content: end;
-    
+       
+}
+
+
+h2{
+    color: bisque;
+    text-align: center;
 }
 
 #middleContent {
@@ -22,8 +31,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
+ 
 }
 
+a {
+    color: bisque;
+}
 .btn{
     background-color: transparent;
     color: white;
@@ -34,6 +47,64 @@ body {
 
 .topSearch{
     display: block;
-    text-align: right;
-    
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: bisque;
+}
+
+
+
+.weatherForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.cityInput{
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#cityBtn {
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#cityBtn:hover{
+    background-color: rgb(226, 189, 43);
+}
+/* 
+#bkg{
+    background-color: aliceblue;
+    opacity: 45%;
+    z-index: -999;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    box-shadow: 3px 3px 7px rgb(224, 144, 5);
+} */
+
+.card{
+    background-image: url(./images/star-4773.gif);
+    /* background-color: rgb(182, 188, 194); */
+    border-radius: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    color: rgb(243, 234, 234);
+    align-items: center;
+}
+
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(226, 226, 238);
 }
