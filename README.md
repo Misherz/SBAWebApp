@@ -15,11 +15,11 @@
     Moon will take you to Nasa page
     Type in any city and get the weather
 
-    Nasa's api has limits - will generate after an hour request has been disabled (note)
+    Nasa's api has requests limits - will generate after an hour request key is disabled, but key will not disable quickly (note)
 
 
 ### Acknowledgement :
-    BroCode YT guide: Weather Aop, Fetching data
+    BroCode YT guide: Weather App, Fetching data
     Nasa API
     Background on  weather: https://pixabay.com/gifs/star-night-night-sky-dark-4773/
     Moon: https://pixabay.com/gifs/moon-lunar-craters-astronomy-spin-12183/
