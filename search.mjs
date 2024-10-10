@@ -1,12 +1,12 @@
 // GetImg Function
 const API_KEY = 'ywmjIhPygnpx0LacggNE7nqtALqLWUzEdDvsxcjI';
 
+
+
 async function getImg() {
     // event.preventDefault();
-    document.getElementById("getImageButton").addEventListener("click", getImg);
 
-    
-    const textInput = document.getElementById("textInput").value;
+    const textInput = Number(document.getElementById("textInput").value);
     console.log(`This is the result` + textInput);
 
     try {
@@ -18,17 +18,15 @@ async function getImg() {
         }
 
         const getData =  await res.json();
-        getData.photos.forEach(photo => {
-            
-        })
-      
 
-        const photos = getData.photos.img_src;
-        console.log("lets see" + photos);
+
+        // const photos = getData.photos[textInput].img_src;
+        // console.log(getData.photos[textInput].img_src);
+        // console.log("lets see" + getData);
         
-        if (photos) {
+        if (getData.photos[textInput].img_src) {
             const resultImgs = document.getElementById("nasaImgs");
-            resultImgs.src = photos[index].img_src; 
+            resultImgs.src = getData.photos[textInput].img_src; 
             resultImgs.style.display = "block"; 
         } 
         else {
@@ -41,6 +39,6 @@ async function getImg() {
     }
 
 }
-getImg()
+// getImg()
 
 export { getImg }

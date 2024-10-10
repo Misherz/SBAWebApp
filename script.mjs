@@ -13,7 +13,7 @@ async function fetchData() {
         if (!response.ok) {
             throw new Error("Could not retrieve resource");
         }
-        const data =  await response.json();
+        const data = await response.json();
         console.log(data)
 
         //Image of the day loading
@@ -21,7 +21,7 @@ async function fetchData() {
         const imgElement = document.getElementById("mainPg");
 
         imgElement.src = imgOfTheDay;
-        imgElement.style.display="block";
+        imgElement.style.display = "block";
 
     }
     catch (error) {
@@ -30,15 +30,15 @@ async function fetchData() {
 }
 
 //Fetch practice
-// fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error("Could not retrieve resource");
-//         }
-//         return response.json();
-//     })
-//     .then(data => console.log(data))
-//     .catch(error => console.error(error));
+fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Could not retrieve resource");
+        }
+        return response.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
 
 
 
@@ -71,6 +71,9 @@ fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&
     .then(data => console.log(data))
     .catch(error => console.error(error));
 
+
+
+document.getElementById("getImageButton").addEventListener("click", getImg);
 
 
 
